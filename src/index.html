@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+
+      #text-fragment {
+        border: red solid 3px;
+        word-break: break-all
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Highlight text and get position of Characters</h1>
+    <div class="container">
+      <div id="fake-text"></div>
+      <div id="text-fragment">None</div>
+    </div>
+    <input id="text-length" type="hidden" value="1000000" />
+    <script src="./js/index.js"></script>
+  </body>
+</html>
